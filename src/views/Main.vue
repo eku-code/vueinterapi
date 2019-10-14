@@ -1,13 +1,17 @@
 <template>
   <div class="main">
     <Header/>
-     <router-view/>
+    <v-layout row wrap >
+      <MyNavigationDrawer/>
+      <router-view/>
+    </v-layout>
   </div>
 </template>
 
 <script>
 
 import Header from "@/components/Header"
+import MyNavigationDrawer from "@/components/MyNavigationDrawer"
 
 export default {
   name: 'Main',
@@ -17,7 +21,8 @@ export default {
     }
   },
   components: {
-    Header
+    Header,
+    MyNavigationDrawer
   }
 }
 </script>
