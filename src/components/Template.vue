@@ -38,7 +38,7 @@ export default {
             alert('Hello!');
         },
     enterTap : function () {
-            console.log('you typed enter button!');
+            alert('you typed enter button!');
         }
   },
   computed: {

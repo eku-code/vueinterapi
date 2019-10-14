@@ -1,12 +1,10 @@
-import Vue from "vue";
-import Vuetify, {
-  VNavigationDrawer
-} from "vuetify";
+import Vue from 'vue';
+import Vuetify from 'vuetify/lib';
 
+Vue.use(Vuetify);
 
-Vue.use(Vuetify, {
-  iconfont: "md",
-  components: {
-    VNavigationDrawer
-  }
+export default new Vuetify({
+  icons: {
+    iconfont: 'mdi',
+  },
 });
