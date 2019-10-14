@@ -13,6 +13,11 @@ export default new Router({
       component: () => import ('@/views/Main'),
       children: [
         {
+          path: '/',
+          name: 'Info',
+          component: () => import ('@/components/Info')
+        },
+        {
           path: '/posts',
           name: 'Post',
           component: () => import ('@/components/Post')
