@@ -18,6 +18,7 @@ export default {
   top: 8px;
   right: 16px;
   font-size: 25px;
-  font-style: oblique;  
+  font-style: oblique;
+  color:white;  
 }
 </style>
