@@ -9,7 +9,6 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'Main',
       component: () => import ('@/views/Main'),
       children: [
         {
@@ -21,6 +20,11 @@ export default new Router({
           path: '/template',
           name: 'Template',
           component: () => import ('@/components/Template')
+        },
+        {
+          path: '',
+          name: 'Main',
+          component: () => import ('@/components/Info')
         }
       ]
     }

@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <v-content>
+    <v-content class="content">
       <router-view/>
     </v-content>
   </v-app>
@@ -15,3 +15,9 @@ export default {
   }),
 };
 </script>
+
+<style scoped>
+.content {
+   background-color: #9dc6df;
+}
+</style>
